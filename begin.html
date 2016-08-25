@@ -4,31 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FUNCTION NAME</title>
+    <title>begin()</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
-      <h1>FUNCTION NAME()</h1>
+      <h1>begin()</h1>
       <dl>
         <dt>Description</dt>
         <dd>
-          Describe what is does.
+          Initializes the Circuit Playground board. <strong>NOTE</strong>: This
+          must always be called in the setup part of the sketch.
         </dd>
         <dt>Syntax</dt>
         <dd>
-          function(parm1);<br/>
-          function(parm1, parm2);
+          begin(brightness);
         </dd>
         <dt>Parameters</dt>
         <dd>
-          parm1 [type]: description<br/>
-          parm2 [type]: description
+          brightness [uint8_t]: set the brightness for all neopixels
         </dd>
         <dt>Returns</dt>
         <dd>
-          What it returns.
+          True if board was successfully initialized, false otherwise.
         </dd>
       </dl>
     </div>
