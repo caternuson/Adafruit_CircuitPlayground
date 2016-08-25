@@ -4,30 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>begin()</title>
+    <title>leftButton()</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
-      <h1>begin()</h1>
+      <h1>leftButton()</h1>
       <dl>
         <dt>Description</dt>
         <dd>
-          Initializes the Circuit Playground board. <strong>NOTE</strong>: This
-          must always be called in the setup part of the sketch.
+          Returns the state of the left push button.
         </dd>
         <dt>Syntax</dt>
         <dd>
-          <code>begin(brightness);</code>
+          <code>leftButton();</code>
         </dd>
         <dt>Parameters</dt>
         <dd>
-          <code>brightness</code> [uint8_t]: set the brightness for all neopixels
+          None
         </dd>
         <dt>Returns</dt>
         <dd>
-          True if board was successfully initialized, false otherwise.
+          True if button is pressed, false otherwise.
         </dd>
       </dl>
     </div>
