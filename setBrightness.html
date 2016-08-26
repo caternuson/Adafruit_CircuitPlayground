@@ -14,7 +14,10 @@
       <dl>
         <dt>Description</dt>
         <dd>
-          Set the brightness level for all Neopixels.
+          Set the global brightness level for all NeoPixels. Only affects pixel
+          colors set after it is called. That is, if you set an LED color and
+          then call setBrightness, it wont affect that older LED color. Only
+          going forward will the brightness change to be different.
         </dd>
         <dt>Syntax</dt>
         <dd>
@@ -22,7 +25,7 @@
         </dd>
         <dt>Parameters</dt>
         <dd>
-          <code>b</code> [uint16_t]: Brightness value, 1-255.
+          <code>b</code> [uint16_t]: Brightness value, 0 (dim) to 255 (bright).
         </dd>
         <dt>Returns</dt>
         <dd>

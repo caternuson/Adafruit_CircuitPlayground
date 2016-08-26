@@ -14,7 +14,10 @@
       <dl>
         <dt>Description</dt>
         <dd>
-          Plays the specified tone on the speaker.
+          Plays the specified tone on the speaker. The call will take the amount
+          of time that it takes to play the tone, so if you have a duration of,
+          say, 5000 milliseconds your Circuit Playground will spend 5 seconds
+          playing a tone and won't be doing anything else.
         </dd>
         <dt>Syntax</dt>
         <dd>
@@ -22,12 +25,12 @@
         </dd>
         <dt>Parameters</dt>
         <dd>
-          <code>freq</code> [uint16_t]: The frequency of the tone in hertz.<br/>
+          <code>freq</code> [uint16_t]: The frequency of the tone in Hertz.<br/>
           <code>time</code> [uint16_t]: The duration of the tone in milliseconds.
         </dd>
         <dt>Returns</dt>
         <dd>
-          What it returns.
+          Nothing
         </dd>
       </dl>
     </div>

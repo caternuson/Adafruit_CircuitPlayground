@@ -14,7 +14,8 @@
       <dl>
         <dt>Description</dt>
         <dd>
-          Return the click source.
+          Return real time tap detection. Must be called within about 100ms of
+          the tapping.
         </dd>
         <dt>Syntax</dt>
         <dd>
@@ -26,7 +27,8 @@
         </dd>
         <dt>Returns</dt>
         <dd>
-          An integer value of the click source.
+          An integer value indicating detected taps, 0 = none, 1 = single,
+          2 or 3 = double.
         </dd>
       </dl>
     </div>
