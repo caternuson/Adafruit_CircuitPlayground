@@ -14,10 +14,18 @@
       <dl>
         <dt>Description</dt>
         <dd>
-          Plays the specified tone on the speaker. The call will take the amount
+          Plays a tone on the speaker for the specified time.
+          <s>The call will take the amount
           of time that it takes to play the tone, so if you have a duration of,
           say, 5000 milliseconds your Circuit Playground will spend 5 seconds
-          playing a tone and won't be doing anything else.
+          playing a tone and won't be doing anything else.</s>
+          <div class="alert alert-danger">
+            <strong>NOTE:</strong> The above was based on Adafruit's documentation.
+            However, it may not be valid. See
+            <a href="https://forums.adafruit.com/viewtopic.php?f=58&t=102459">this</a>
+            thread. TLDR - it's like Arduino
+            <a href="https://www.arduino.cc/en/Reference/Tone">tone()</a>.
+          </div>
         </dd>
         <dt>Syntax</dt>
         <dd>
