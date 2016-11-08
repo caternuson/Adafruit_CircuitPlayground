@@ -14,27 +14,32 @@
       <dl>
         <dt>Description</dt>
         <dd>
-          Plays a tone on the speaker for the specified time.
-          <s>The call will take the amount
-          of time that it takes to play the tone, so if you have a duration of,
-          say, 5000 milliseconds your Circuit Playground will spend 5 seconds
-          playing a tone and won't be doing anything else.</s>
-          <div class="alert alert-danger">
-            <strong>NOTE:</strong> The above was based on Adafruit's documentation.
-            However, it may not be valid. See
-            <a href="https://forums.adafruit.com/viewtopic.php?f=58&t=102459">this</a>
-            thread. TLDR - it's like Arduino
-            <a href="https://www.arduino.cc/en/Reference/Tone">tone()</a>.
+          <p>
+          Plays a tone on the speaker for the specified time. Call can be either
+          blocking (default) or non-blocking*.
+          </p><p>
+          For a blocking call, 
+          the call will take the amount of time that it takes to play the tone,
+          so if you have a duration of, say, 5000 milliseconds your Circuit Playground
+          will spend 5 seconds playing a tone and won't be doing anything else.
+          </p><p>
+          If you do not want the call to wait the specified amount of time and
+          return immediately (i.e. non-blocking), specify false for the third
+          parameter.
+          </p>
+          <div class="alert alert-info">
+            <strong>*NOTE:</strong> Applies to library version 1.6.4 and up.</a>
           </div>
         </dd>
         <dt>Syntax</dt>
         <dd>
-          <code>playTone(freq, time);</code>
+          <code>playTone(freq, time, wait=true);</code>
         </dd>
         <dt>Parameters</dt>
         <dd>
           <code>freq</code> [uint16_t]: The frequency of the tone in Hertz.<br/>
-          <code>time</code> [uint16_t]: The duration of the tone in milliseconds.
+          <code>time</code> [uint16_t]: The duration of the tone in milliseconds.<br/>
+          <code>wait</code> [boolean]: Specify whether call should block or not.
         </dd>
         <dt>Returns</dt>
         <dd>
